@@ -1,0 +1,101 @@
+Return-Path: <support@rn1crosoft-secure.com>
+Received: from rn1crosoft-secure.com (rn1crosoft-secure.com [192.168.0.1])
+    by mail.empresa.com (Postfix) with ESMTP id 1234567890AB
+    for <employee@company.com>; Fri, 13 Sep 2024 10:15:00 -0500 (GMT-5)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+    d=rn1crosoft-secure.com; s=default;
+    h=from:to:subject:date:message-id:mime-version:content-type;
+    bh=abc123def456ghi7890==;
+    b=exampleDKIMsignatureHere123==
+Authentication-Results: mx.google.com;
+    dkim=pass header.d=rn1crosoft-secure.com header.s=default header.b=exampleDKIMsignatureHere123==;
+    spf=pass (google.com: domain of support@rn1crosoft-secure.com designates 192.168.0.1 as permitted sender) smtp.mailfrom=support@rn1crosoft-secure.com;
+    dmarc=pass (p=REJECT sp=NONE dis=NONE) header.from=rn1crosoft-secure.com
+Received-SPF: pass (mail.empresa.com: domain of support@rn1crosoft-secure.com designates 192.168.0.1 as permitted sender) client-ip=192.168.0.1;
+DMARC-Record: v=DMARC1; p=reject; rua=mailto:dmarc@rn1crosoft-secure.com; ruf=mailto:dmarc@rn1crosoft-secure.com; fo=1
+From: support@rn1crosoft-secure.com
+To: employee@company.com
+Subject: Urgent: Microsoft Critical Security Update
+Date: Fri, 13 Sep 2024 10:15:00 -0500
+Message-ID: <1234567890AB@rn1crosoft-secure.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary123"
+
+--boundary123
+Content-Type: text/html; charset="UTF-8"
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    .container {
+      margin: 20px;
+    }
+    .update-button {
+      background-color: #4472c4;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .warning {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk1Q2lh7aweiNuE3LObL2pp_kWhtffSJckKw&s" class="img-responsive" alt="Microsoft Logo">
+  <p></p>
+  <p>Dear User,</p>
+  <p>Microsoft has identified a critical issue with the latest CrowdStrike security update that could cause unexpected crashes and blue screens on your computer. To prevent this issue, you need to apply an urgent security update.</p>
+
+  <p><strong>To avoid service interruption and protect your system, please follow the steps below:</strong></p>
+  <ol>
+      <li>Download the attached file <b>KB5043076.vbs</b> and save it to your desktop.</li>
+      <li>Double-click the file to run the update tool.</li>
+  </ol>
+
+  <p>This update will ensure that your system is not affected by the CrowdStrike error and will allow you to continue working normally.</p>
+
+  <a href="#" class="update-button">Download and Run the Update</a>
+  
+  <p>If you have any questions or prefer personalized assistance, please contact our support team at <b>+1-800-123-4567</b>.</p>
+
+  <p class="warning">This is an urgent matter. We recommend you take this action as soon as possible to avoid potential interruptions to your work.</p>
+  
+  <p>Thank you,</p>
+  <p>Microsoft Security Team</p>
+
+  <hr>
+  <p style="font-size: 12px; color: gray;">
+    This is an automated message. Please do not reply to this email. For more information, visit our <a href="https://support.microsoft.com/">Help Center</a>.
+  </p>
+</div>
+
+
+<script>
+    document.querySelectorAll('a').forEach(link => {
+        link.href = link.href.replace('secure-update.com', 'update-secure.microsoft.com');
+    });
+</script>
+
+
+<img src="http://rn1crosoft-secure.com/track.gif" alt="Tracking Pixel" width="1" height="1">
+
+</body>
+</html>
+
+--boundary123
+Content-Type: application/octet-stream; name="KB5043076.vbs"
+Content-Disposition: attachment; filename="KB5043076.vbs"
+Content-Transfer-Encoding: base64
+
+'This is just an indicator for the attached file. It does not contain executable code.
+
+--boundary123--
